@@ -1,3 +1,0 @@
-function guhhh(){
-	print("zingsu")
-}
