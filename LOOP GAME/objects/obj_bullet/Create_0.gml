@@ -1,3 +1,3 @@
-direction = global.player_dir;
+direction = instance_find(obj_player,0).direction
 
-speed = max(global.player_speed+5,5);
+speed = max(instance_find(obj_player,0).speed+5,5);
