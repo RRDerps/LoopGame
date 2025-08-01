@@ -1,11 +1,12 @@
-var variable = x;
-
-if(variable < 0){	x += 1430;}
-
-else{	if(variable > 1370){	x += -1430;}}
-
-var variable = y;
-
-if(variable < 0){	y += 830;}
-
-else{	if(variable > 770){	y += -830;}}
+if(x < 0)
+{
+	x += 1344;
+}else if(x > 1280){
+	x += -1344;
+}
+if(y < 0)
+{
+	y += 784;
+}else if(y > 720){
+	y += -784;
+}
