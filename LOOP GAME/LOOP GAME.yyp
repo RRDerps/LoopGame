@@ -38,7 +38,6 @@
   },
   "name":"LOOP GAME",
   "resources":[
-    {"id":{"name":"main_font","path":"fonts/main_font/main_font.yy",},},
     {"id":{"name":"obj_asteroid_1","path":"objects/obj_asteroid_1/obj_asteroid_1.yy",},},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},
@@ -52,15 +51,16 @@
     {"id":{"name":"Script_Force","path":"scripts/Script_Force/Script_Force.yy",},},
     {"id":{"name":"spr_asteroid_1","path":"sprites/spr_asteroid_1/spr_asteroid_1.yy",},},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
+    {"id":{"name":"spr_main_font","path":"sprites/spr_main_font/spr_main_font.yy",},},
     {"id":{"name":"spr_menu","path":"sprites/spr_menu/spr_menu.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"title_room","path":"rooms/title_room/title_room.yy",},},
     {"roomId":{"name":"zoomcord_room","path":"rooms/zoomcord_room/zoomcord_room.yy",},},
     {"roomId":{"name":"asteroids_room","path":"rooms/asteroids_room/asteroids_room.yy",},},
-    {"roomId":{"name":"title_room","path":"rooms/title_room/title_room.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
