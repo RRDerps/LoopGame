@@ -16,6 +16,65 @@ if (!setup) {
 
         // Get the x position (center the textbox)
         text_x_offset[p] = 355;
+		
+		// Setting char to find where text should break
+		for (var c = 0; c < text_length[p]; c++)
+		{
+		var _char_pos = c+1;
+		
+		// store char in array
+		char[c, p] = string_char_at(text[p], _char_pos);
+		
+		// Get line width
+		var _txt_up_to_char = string_copy(text[p], 1, _char_pos);
+		var _current_txt_w = string_width(_txt_up_to_char) - string_width(char[c, p]);
+		
+		// Get last free space
+		 if char[c, p] == " " {last_free_space = _char_pos+1}; 
+		
+		// Get line breaks
+		if _current_txt_w - line_break_offset[p] > line_width
+		{
+			line_break_pos[line_break_num[p], p] = last_free_space;
+			line_break_num[p]++;
+			var _txt_up_to_last_space = string_copy(text[p], 1, last_free_space);
+			var _last_free_space_string = string_char_at(text[p], last_free_space);
+			line_break_offset[p] = string_width(_txt_up_to_last_space) - string_width(_last_free_space_string);		
+		}
+		
+		
+		}
+		
+	// getting char cords
+	for (var c = 0; c < text_length[p]; c++)
+	{
+	var _char_pos = c+1;
+	var _txt_x = textbox_x + text_x_offset[p] + border;
+	var _txt_y = textbox_y + border;
+	var _txt_up_to_char = string_copy(text[p], 1, _char_pos);
+	var _current_txt_w = string_width(_txt_up_to_char) - string_width(char[c, p]);
+	var _txt_line = 0;
+	
+	// compensate for string break
+	for (var lb = 0; lb < line_break_num[p]; lb++)
+	{
+	// If looping character is line break
+	if _char_pos >=line_break_pos[lb, p]
+		{
+		var _str_copy = string_copy(text[p], line_break_pos[lb, p], _char_pos - line_break_pos[lb, p] );
+		_current_txt_w = string_width(_str_copy);
+		
+		// record line character should be on
+		_txt_line = lb + 1; // lb starts at 0
+		}
+	}
+
+	// Add info to x and y cords
+	char_x[c, p] = _txt_x + _current_txt_w;
+	char_y[c, p] = _txt_y + _txt_line*line_sep;
+	}
+		
+		
     }
 }
 
@@ -53,8 +112,8 @@ if (accept_key) {
 var _txtb_x = textbox_x + text_x_offset[page];
 var _txtb_y = textbox_y;
 textb_img += textb_img_speed;
-textb_spr_w = sprite_get_width(textb_sprite);
-textb_spr_h = sprite_get_height(textb_sprite);
+var textb_spr_w = sprite_get_width(textb_sprite); // if something breaks, switch these 2 off variables
+var textb_spr_h = sprite_get_height(textb_sprite);
 
 draw_sprite_ext(
     textb_sprite, textb_img, _txtb_x, _txtb_y,
@@ -117,9 +176,9 @@ if (draw_char == text_length[page] && page == page_number - 1) {
 }
 
 // Draw text
-var _drawtext = string_copy(text[page], 1, draw_char);
-draw_text_ext(
-    _txtb_x + border,
-    _txtb_y + border,
-    _drawtext, line_sep, line_width
-);
+for(var c = 0; c < draw_char; c++)
+	{
+	// text
+	draw_text(char_x[c, page], char_y[c, page], char[c, page]); 
+	
+	}
