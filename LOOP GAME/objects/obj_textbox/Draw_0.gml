@@ -15,7 +15,7 @@ if (!setup) {
         text_length[p] = string_length(text[p]);
 
         // Get the x position (center the textbox)
-        text_x_offset[p] = 355;
+        text_x_offset[p] = 276;
 		
 		// Setting char to find where text should break
 		for (var c = 0; c < text_length[p]; c++)

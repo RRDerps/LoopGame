@@ -2,7 +2,8 @@ function scr_set_defaults_for_text() {
 	line_break_pos[0, page_number] = 900;	
 	line_break_num[page_number] = 0;
 	line_break_offset[page_number] = 0;
-	
+	speaker_sprite[page_number] = noone;
+	speaker_side[page_number] = 1
 	}
 
 /// @param text
