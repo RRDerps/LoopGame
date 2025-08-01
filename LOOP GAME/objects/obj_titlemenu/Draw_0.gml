@@ -11,7 +11,7 @@ width = _new_w + op_border*2;
 height = op_border*2 + string_height(option[0, 0]) + (op_length-1)*op_space;
 
 //centering menu
-x = camera_get_view
+
 //draw the menu background
 draw_sprite_ext(sprite_index, image_index, x, y, width/sprite_width, height/sprite_height, 0, c_white, 1);
 
