@@ -12,12 +12,6 @@ textb_img_speed = 6 / 60;
 //text
 page = 0;
 page_number = 0;
-text[0] = "Machine...";
-text[1] = "I will cut you down,";
-text[2] = "break you apart,";
-text[3] = "splay the gore of your profane form across the STARS-";
-text[4] = "I WILL GRIND YOU DOWN UNTIL THE VERY SPARKS CRY FOR MERCY.";
-text[5] = "MY HANDS SHALL RELISH ENDING YOU. HERE. AND. NOW.";
 draw_char = 0;
 text_spd = 0.5;
 

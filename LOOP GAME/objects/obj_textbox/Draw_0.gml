@@ -10,7 +10,6 @@ if (!setup) {
     draw_set_halign(fa_left);
 
     // loop through pages
-    page_number = array_length(text);
     for (var p = 0; p < page_number; p++) {
         // How many characters are on each page to store in text_length array
         text_length[p] = string_length(text[p]);
