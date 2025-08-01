@@ -1,4 +1,4 @@
-width = 64;
+width = 100;
 height = 104;
 
 op_border = 8;

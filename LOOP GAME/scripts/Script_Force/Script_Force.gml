@@ -11,7 +11,7 @@ function Force_Push()
 		var player_y = player_ref.y
 		var x_dif = player_x-x
 		var y_dif = y-player_y
-		if sqrt((sqr(x_dif)+sqr(y_dif))) < 2000{
+		if sqrt((sqr(x_dif)+sqr(y_dif))) < 200{
 			//prev velocity (convert to x/y)
 			var old_vel_x = speed*cos(pi*direction/180)
 			var old_vel_y = speed*sin(pi*direction/180)
