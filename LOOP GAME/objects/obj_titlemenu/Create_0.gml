@@ -2,7 +2,7 @@ width = 100;
 height = 104;
 
 op_border = 8;
-op_space = 16;
+op_space = 32;
 
 pos = 0;
 
@@ -19,3 +19,6 @@ option[1, 3] = "Back";
 
 op_length = 0;
 menu_level = 0;
+
+draw_set_font(font_main);
+op_space = string_height("Mg") + 4;  // fix for vertical clipping (patch job dont sue me)

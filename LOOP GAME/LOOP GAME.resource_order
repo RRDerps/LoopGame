@@ -1,19 +1,21 @@
 {
   "FolderOrderSettings":[
+    {"name":"Dialogue System","order":2,"path":"folders/Dialogue System.yy",},
     {"name":"Menu","order":1,"path":"folders/Menu.yy",},
     {"name":"scene objects","order":4,"path":"folders/Objects/scene objects.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"font_main","order":5,"path":"fonts/font_main/font_main.yy",},
     {"name":"obj_bullet","order":1,"path":"objects/obj_bullet/obj_bullet.yy",},
     {"name":"obj_player","order":2,"path":"objects/obj_player/obj_player.yy",},
     {"name":"obj_settings","order":3,"path":"objects/obj_settings/obj_settings.yy",},
     {"name":"obj_titlemenu","order":1,"path":"objects/obj_titlemenu/obj_titlemenu.yy",},
     {"name":"obj_transition","order":1,"path":"objects/obj_transition/obj_transition.yy",},
+    {"name":"dialoguetest_room","order":2,"path":"rooms/dialoguetest_room/dialoguetest_room.yy",},
     {"name":"title_room","order":2,"path":"rooms/title_room/title_room.yy",},
     {"name":"zoomcord_room","order":1,"path":"rooms/zoomcord_room/zoomcord_room.yy",},
     {"name":"Script_Force","order":1,"path":"scripts/Script_Force/Script_Force.yy",},
     {"name":"spr_bullet","order":1,"path":"sprites/spr_bullet/spr_bullet.yy",},
-    {"name":"spr_main_font","order":4,"path":"sprites/spr_main_font/spr_main_font.yy",},
     {"name":"spr_player","order":2,"path":"sprites/spr_player/spr_player.yy",},
   ],
 }
