@@ -1,1 +1,1 @@
-font_delete(global.main_font);
+font_delete(global.font_main);
