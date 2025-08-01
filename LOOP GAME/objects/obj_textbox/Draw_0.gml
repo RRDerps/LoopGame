@@ -48,11 +48,20 @@ if (accept_key) {
 
 //Draw textbox
 textb_img += textb_img_speed;
-textb_spr_w = sprite_get_width(textb_spr);
-textb_spr_h = sprite_get_height(textb_spr);
+textb_spr_w = sprite_get_width(textb_sprite);
+textb_spr_h = sprite_get_height(textb_sprite);
 
-draw_sprite_ext(txtb_spr, textb_img, textbox_x + text_x_offset[page], textbox_y, textbox_width/textb_spr_w, textbox_height/textb_spr_h, 0, c_white, 1)
+draw_sprite_ext(
+    textb_sprite, textb_img,
+    textbox_x + text_x_offset[page], textbox_y,
+    textbox_width / textb_spr_w, textbox_height / textb_spr_h,
+    0, c_white, 1
+);
 
 // Draw text
 var _drawtext = string_copy(text[page], 1, draw_char);
-draw_text_ext(textbox_x + text_x_offset[page] + border, textbox_y + border, _drawtext, line_sep, line_width);
+draw_text_ext(
+    textbox_x + text_x_offset[page] + border,
+    textbox_y + border,
+    _drawtext, line_sep, line_width
+);
