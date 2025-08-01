@@ -20,8 +20,8 @@
   ],
   "name":"title_room",
   "parent":{
-    "name":"Menu",
-    "path":"folders/Menu.yy",
+    "name":"Rooms",
+    "path":"folders/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
