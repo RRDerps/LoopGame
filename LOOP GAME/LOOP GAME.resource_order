@@ -21,6 +21,7 @@
     {"name":"spr_bullet","order":1,"path":"sprites/spr_bullet/spr_bullet.yy",},
     {"name":"spr_dialogueboxtest","order":3,"path":"sprites/spr_dialogueboxtest/spr_dialogueboxtest.yy",},
     {"name":"spr_player","order":2,"path":"sprites/spr_player/spr_player.yy",},
+    {"name":"spr_textbox_arrow","order":6,"path":"sprites/spr_textbox_arrow/spr_textbox_arrow.yy",},
     {"name":"spr_textbox","order":1,"path":"sprites/spr_textbox/spr_textbox.yy",},
   ],
 }

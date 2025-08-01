@@ -3,7 +3,7 @@
 function scr_game_text(_text_id){
 
 switch(_text_id) {
-
+//test box 1
 case "angry_1":
 scr_text("Machine...");
 scr_text("I will cut you down,");
@@ -16,15 +16,24 @@ scr_text("AND.");
 scr_text("NOW.");
 break;
 
+//test box 2
 case "piss_2":
 scr_text("piss");
 scr_text("comedy.");
-
 break;
 
+//test box 3
 case "cutie_3":
-scr_text("I'm a cutie patootie");
+scr_text("Wawawoo?");
+	scr_option("Yep", "cutie_3 - yes");
+	scr_option("Na", "cutie_3 - no");
 break;
-
+case "cutie_3 - yes":
+scr_text("Yes? Good for you.");
+break;
+case "cutie_3 - no":
+scr_text("No?")
+scr_text("You sure?")
+break;
 }
 }
